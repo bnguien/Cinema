@@ -1,0 +1,3 @@
+[submodule "MyMVCApp"]
+	path = MyMVCApp
+	url = https://github.com/bnguien/MVC5.git
