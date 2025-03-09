@@ -1,0 +1,32 @@
+@model List<MyMVCApp.Models.Customer>
+@{
+    ViewData["Title"] = "Customer";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <text>No customers have been added</text>
+}
+else
+{
+    <table class="table">
+        <thead>
+           <tr>
+            <th>Name</th>
+            <th>Action</th>
+           </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.Name</td>
+                    <td><a asp-controller="Customer" asp-action="Details" asp-route-id="@customer.Id">View Details</a></td>
+                </tr>
+            }
+            <btn btn-addNewCustomer><a asp-asp-controller="Customer" asp-action="New">Add New Customer</a></btn>
+        </tbody>
+    </table>
+}

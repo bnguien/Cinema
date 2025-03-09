@@ -1,0 +1,22 @@
+@model MyMVCApp.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p><strong>ID: </strong>@Model.Id</p>
+<p><strong>Name: </strong>@Model.Name</p>
+<p><strong>Membership Type: </strong> @(Model.MembershipType != null ? Model.MembershipType.Name : "N/A")</p>
+
+@if (Model.Birthdate.HasValue)
+{
+    <p><strong>Birthdate: </strong> @Model.Birthdate.Value.ToString("dd/MM/yyyy")</p>
+}
+else
+{
+    <p><strong>Birthdate: </strong> N/A</p>
+}
+
+<a href="@Url.Action("Index", "Customer")"><button>Back to List</button></a>

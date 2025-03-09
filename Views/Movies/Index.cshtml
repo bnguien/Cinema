@@ -1,0 +1,20 @@
+@model List<MyMVCApp.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movie";
+}
+
+<h2>@ViewData["Title"]</h2>
+@if(!Model.Any())
+{
+    <p>We don't currently have any movies</p>
+}
+else
+{
+    <ul>
+        @foreach (var movie in Model)
+        {
+            <li>@movie.Name</li>
+        }
+    </ul>
+}
