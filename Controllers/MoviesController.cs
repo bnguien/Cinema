@@ -76,7 +76,30 @@ namespace MyMVCApp.Controllers
                 return NotFound();
             }
             var viewModel = new MovieFormViewModel { Movie = movie };
-            return View("New", viewModel);
+            return View("MovieForm", viewModel);
+        }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var movie = _context.Movies.Find(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+            return View(movie);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var movie = _context.Movies.Find(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+            _context.Movies.Remove(movie);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Movies");
         }
     }
 }

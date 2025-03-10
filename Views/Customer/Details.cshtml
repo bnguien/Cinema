@@ -21,6 +21,7 @@ else
 }
 
 <a href="@Url.Action("Index", "Customer")"><button class="btn btn-Back">Back to List</button></a>
+<a href="@Url.Action("Edit", "Customer", new { id = Model.Id })"><button class="btn btn-primary">Edit</button></a>
 <a href="@Url.Action("Delete", "Customer", new { id = Model.Id })">
     <button class="btn btn-danger">Delete</button>
 </a>
