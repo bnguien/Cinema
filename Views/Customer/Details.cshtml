@@ -9,6 +9,7 @@
 <p><strong>ID: </strong>@Model.Id</p>
 <p><strong>Name: </strong>@Model.Name</p>
 <p><strong>Membership Type: </strong> @(Model.MembershipType != null ? Model.MembershipType.Name : "N/A")</p>
+<p><strong>Is Subscribed to Newsletter: </strong> @Model.IsSubscribedToNewsletter</p>
 
 @if (Model.Birthdate.HasValue)
 {
@@ -19,4 +20,7 @@ else
     <p><strong>Birthdate: </strong> N/A</p>
 }
 
-<a href="@Url.Action("Index", "Customer")"><button>Back to List</button></a>
+<a href="@Url.Action("Index", "Customer")"><button class="btn btn-Back">Back to List</button></a>
+<a href="@Url.Action("Delete", "Customer", new { id = Model.Id })">
+    <button class="btn btn-danger">Delete</button>
+</a>

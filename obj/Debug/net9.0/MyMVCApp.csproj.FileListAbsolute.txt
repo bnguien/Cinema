@@ -227,3 +227,4 @@ E:\ASP_NET\MyMVCApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cry
 E:\ASP_NET\MyMVCApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 E:\ASP_NET\MyMVCApp\obj\Debug\net9.0\compressed\tdw6hq2dso-0fe0zyaxhn.gz
 E:\ASP_NET\MyMVCApp\obj\Debug\net9.0\compressed\e4dowgmbtv-0fe0zyaxhn.gz
+E:\ASP_NET\MyMVCApp\obj\Debug\net9.0\MyMVCApp.sourcelink.json

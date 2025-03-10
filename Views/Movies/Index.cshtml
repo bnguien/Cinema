@@ -5,16 +5,28 @@
 }
 
 <h2>@ViewData["Title"]</h2>
-@if(!Model.Any())
+@if(!Model.Any() || Model == null)
 {
     <p>We don't currently have any movies</p>
 }
 else
 {
-    <ul>
-        @foreach (var movie in Model)
-        {
-            <li>@movie.Name</li>
-        }
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.Name</td>
+                    <td><a asp-controller="Movies" asp-action="Details" asp-route-id="@movie.Id">View Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button btn-addNewMovie><a asp-asp-controller="Movies" asp-action="New">Add New Movie</a></button>
 }

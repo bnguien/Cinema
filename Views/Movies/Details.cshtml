@@ -1,0 +1,13 @@
+@model MyMVCApp.Models.Movie
+@{
+    ViewData["Title"] = "Movie Details";
+}
+<h2>@ViewData["Title"]</h2>
+<p><strong>ID: </strong>@Model.Id</p>
+<p><strong>Name: </strong>@Model.Name</p>
+<p><strong>Genre: </strong>@Model.Genre</p>
+<p><strong>Release Date: </strong>@Model.ReleaseDate</p>
+<p><strong>Price: </strong>@Model.Price</p>
+<a href="@Url.Action("Index", "Movies")"><button class="btn btn-Back">Back to List</button></a>
+<a href="@Url.Action("Delete", "Movies", new { id = Model.Id })">
+    <button class="btn btn-danger">Delete</button>

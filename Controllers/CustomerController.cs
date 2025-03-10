@@ -64,7 +64,28 @@ namespace MyMVCApp.Controllers
 
             return RedirectToAction("Index", "Customer");
         }
-
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var customer = _context.Customers.Find(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return View(customer);
+        }
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var customer = _context.Customers.Find(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            _context.Customers.Remove(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customer");
+        }
         public IActionResult Index()
         {
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();

@@ -12,8 +12,8 @@ using MyMVCApp.Data;
 namespace MyMVCApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250308110823_UpdateDatabaseSchema")]
-    partial class UpdateDatabaseSchema
+    [Migration("20250310140047_Data")]
+    partial class Data
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,26 +57,58 @@ namespace MyMVCApp.Migrations
                         new
                         {
                             Id = 1,
-                            Birthdate = new DateTime(1980, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IsSubscribedToNewsletter = false,
+                            Birthdate = new DateTime(1990, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSubscribedToNewsletter = true,
                             MembershipTypeId = (byte)1,
-                            Name = "John Doe"
+                            Name = "Yoo Jae Yi"
                         },
                         new
                         {
                             Id = 2,
-                            Birthdate = new DateTime(1985, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Birthdate = new DateTime(1995, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsSubscribedToNewsletter = false,
                             MembershipTypeId = (byte)2,
-                            Name = "Jane Doe"
+                            Name = "Woo Seul Gi"
                         },
                         new
                         {
                             Id = 3,
-                            Birthdate = new DateTime(1990, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IsSubscribedToNewsletter = false,
+                            Birthdate = new DateTime(2000, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSubscribedToNewsletter = true,
                             MembershipTypeId = (byte)3,
-                            Name = "Sam Smith"
+                            Name = "Jung Hae In"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Birthdate = new DateTime(2005, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSubscribedToNewsletter = false,
+                            MembershipTypeId = (byte)4,
+                            Name = "Jung So Min"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Birthdate = new DateTime(2010, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSubscribedToNewsletter = true,
+                            MembershipTypeId = (byte)1,
+                            Name = "Nam Joo Hyuk"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Birthdate = new DateTime(2015, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSubscribedToNewsletter = false,
+                            MembershipTypeId = (byte)2,
+                            Name = "Kim Seon Ho"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Birthdate = new DateTime(2020, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSubscribedToNewsletter = true,
+                            MembershipTypeId = (byte)3,
+                            Name = "Lee Do Hyun"
                         });
                 });
 
@@ -108,32 +140,32 @@ namespace MyMVCApp.Migrations
                             Id = (byte)1,
                             DiscountRate = (byte)0,
                             DurationInMonths = (byte)0,
-                            Name = "Pay As You Go",
+                            Name = "Pay as You Go",
                             SignUpFee = (short)0
                         },
                         new
                         {
                             Id = (byte)2,
                             DiscountRate = (byte)10,
-                            DurationInMonths = (byte)0,
+                            DurationInMonths = (byte)1,
                             Name = "Monthly",
-                            SignUpFee = (short)0
+                            SignUpFee = (short)30
                         },
                         new
                         {
                             Id = (byte)3,
                             DiscountRate = (byte)15,
-                            DurationInMonths = (byte)0,
+                            DurationInMonths = (byte)3,
                             Name = "Quarterly",
-                            SignUpFee = (short)0
+                            SignUpFee = (short)90
                         },
                         new
                         {
                             Id = (byte)4,
                             DiscountRate = (byte)20,
-                            DurationInMonths = (byte)0,
+                            DurationInMonths = (byte)12,
                             Name = "Annual",
-                            SignUpFee = (short)0
+                            SignUpFee = (short)300
                         });
                 });
 
@@ -145,8 +177,17 @@ namespace MyMVCApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Genre")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -156,17 +197,58 @@ namespace MyMVCApp.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "The Shawshank Redemption"
+                            Genre = "Comedy",
+                            Name = "Shrek",
+                            Price = 10m,
+                            ReleaseDate = new DateTime(2001, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 2,
-                            Name = "The Godfather"
+                            Genre = "Family",
+                            Name = "Wall-E",
+                            Price = 8m,
+                            ReleaseDate = new DateTime(2008, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 3,
-                            Name = "The Dark Knight"
+                            Genre = "Crime",
+                            Name = "The Godfather",
+                            Price = 9m,
+                            ReleaseDate = new DateTime(1972, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Genre = "Action",
+                            Name = "The Dark Knight",
+                            Price = 12m,
+                            ReleaseDate = new DateTime(2008, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Genre = "Romcom",
+                            Name = "Love Next Door",
+                            Price = 11m,
+                            ReleaseDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Genre = "Sci-Fi",
+                            Name = "The Matrix",
+                            Price = 13m,
+                            ReleaseDate = new DateTime(1999, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Genre = "Drama",
+                            Name = "The Shawshank Redemption",
+                            Price = 14m,
+                            ReleaseDate = new DateTime(1994, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 

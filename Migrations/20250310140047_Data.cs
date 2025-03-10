@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MyMVCApp.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateDatabaseSchema : Migration
+    public partial class Data : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -65,7 +65,10 @@ namespace MyMVCApp.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ReleaseDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -77,20 +80,24 @@ namespace MyMVCApp.Migrations
                 columns: new[] { "Id", "DiscountRate", "DurationInMonths", "Name", "SignUpFee" },
                 values: new object[,]
                 {
-                    { (byte)1, (byte)0, (byte)0, "Pay As You Go", (short)0 },
-                    { (byte)2, (byte)10, (byte)0, "Monthly", (short)0 },
-                    { (byte)3, (byte)15, (byte)0, "Quarterly", (short)0 },
-                    { (byte)4, (byte)20, (byte)0, "Annual", (short)0 }
+                    { (byte)1, (byte)0, (byte)0, "Pay as You Go", (short)0 },
+                    { (byte)2, (byte)10, (byte)1, "Monthly", (short)30 },
+                    { (byte)3, (byte)15, (byte)3, "Quarterly", (short)90 },
+                    { (byte)4, (byte)20, (byte)12, "Annual", (short)300 }
                 });
 
             migrationBuilder.InsertData(
                 table: "Movies",
-                columns: new[] { "Id", "Name" },
+                columns: new[] { "Id", "Genre", "Name", "Price", "ReleaseDate" },
                 values: new object[,]
                 {
-                    { 1, "The Shawshank Redemption" },
-                    { 2, "The Godfather" },
-                    { 3, "The Dark Knight" }
+                    { 1, "Comedy", "Shrek", 10m, new DateTime(2001, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, "Family", "Wall-E", 8m, new DateTime(2008, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, "Crime", "The Godfather", 9m, new DateTime(1972, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 4, "Action", "The Dark Knight", 12m, new DateTime(2008, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 5, "Romcom", "Love Next Door", 11m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 6, "Sci-Fi", "The Matrix", 13m, new DateTime(1999, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 7, "Drama", "The Shawshank Redemption", 14m, new DateTime(1994, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -98,9 +105,13 @@ namespace MyMVCApp.Migrations
                 columns: new[] { "Id", "Birthdate", "IsSubscribedToNewsletter", "MembershipTypeId", "Name" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(1980, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, (byte)1, "John Doe" },
-                    { 2, new DateTime(1985, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, (byte)2, "Jane Doe" },
-                    { 3, new DateTime(1990, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, (byte)3, "Sam Smith" }
+                    { 1, new DateTime(1990, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), true, (byte)1, "Yoo Jae Yi" },
+                    { 2, new DateTime(1995, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, (byte)2, "Woo Seul Gi" },
+                    { 3, new DateTime(2000, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), true, (byte)3, "Jung Hae In" },
+                    { 4, new DateTime(2005, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, (byte)4, "Jung So Min" },
+                    { 5, new DateTime(2010, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), true, (byte)1, "Nam Joo Hyuk" },
+                    { 6, new DateTime(2015, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, (byte)2, "Kim Seon Ho" },
+                    { 7, new DateTime(2020, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), true, (byte)3, "Lee Do Hyun" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -148,6 +159,26 @@ namespace MyMVCApp.Migrations
                 table: "Customers",
                 keyColumn: "Id",
                 keyValue: 3);
+
+            migrationBuilder.DeleteData(
+                table: "Customers",
+                keyColumn: "Id",
+                keyValue: 4);
+
+            migrationBuilder.DeleteData(
+                table: "Customers",
+                keyColumn: "Id",
+                keyValue: 5);
+
+            migrationBuilder.DeleteData(
+                table: "Customers",
+                keyColumn: "Id",
+                keyValue: 6);
+
+            migrationBuilder.DeleteData(
+                table: "Customers",
+                keyColumn: "Id",
+                keyValue: 7);
 
             migrationBuilder.DropColumn(
                 name: "Birthdate",
