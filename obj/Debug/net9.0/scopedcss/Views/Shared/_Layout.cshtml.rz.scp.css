@@ -54,3 +54,10 @@ button.accept-policy[b-505wmy0soe] {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+.input-validation-error[b-505wmy0soe] {
+  color: #dc3545 ;
+  border: 10px solid #dc3545;
+}
+.field-validation-error[b-505wmy0soe] {
+  border: 10px solid #dc3545;
+}

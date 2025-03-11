@@ -54,3 +54,10 @@ button.accept-policy {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+.input-validation-error {
+  color: #dc3545 ;
+  border: 10px solid #dc3545;
+}
+.field-validation-error {
+  border: 10px solid #dc3545;
+}

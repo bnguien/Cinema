@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oka0nUBZRUsFRlDgXE10altQclIh8hpgyupA6tUjD50=",
+  "Hash": "PwQ7ioLYHSt+aheqM97Tf2FZMI7NxdJ6jEUonPwc6O4=",
   "Source": "MyMVCApp",
   "BasePath": "_content/MyMVCApp",
   "Mode": "Default",
@@ -521,12 +521,12 @@
       "OriginalItemSpec": "E:\\ASP_NET\\MyMVCApp\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-0fe0zyaxhn.gz",
+      "Identity": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-7jv36uega7.gz",
       "SourceId": "MyMVCApp",
       "SourceType": "Computed",
       "ContentRoot": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MyMVCApp",
-      "RelativePath": "MyMVCApp#[.{fingerprint=0fe0zyaxhn}]!.bundle.scp.css.gz",
+      "RelativePath": "MyMVCApp#[.{fingerprint=7jv36uega7}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -535,8 +535,8 @@
       "RelatedAsset": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MyMVCApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xbdtvbn1fn",
-      "Integrity": "Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=",
+      "Fingerprint": "3e7kub7296",
+      "Integrity": "lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MyMVCApp.bundle.scp.css"
@@ -1004,12 +1004,12 @@
       "OriginalItemSpec": "E:\\ASP_NET\\MyMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-0fe0zyaxhn.gz",
+      "Identity": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-7jv36uega7.gz",
       "SourceId": "MyMVCApp",
       "SourceType": "Computed",
       "ContentRoot": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MyMVCApp",
-      "RelativePath": "MyMVCApp#[.{fingerprint=0fe0zyaxhn}]?.styles.css.gz",
+      "RelativePath": "MyMVCApp#[.{fingerprint=7jv36uega7}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -1018,8 +1018,8 @@
       "RelatedAsset": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\MyMVCApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xbdtvbn1fn",
-      "Integrity": "Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=",
+      "Fingerprint": "3e7kub7296",
+      "Integrity": "lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\MyMVCApp.styles.css"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "0fe0zyaxhn",
-      "Integrity": "BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=",
+      "Fingerprint": "7jv36uega7",
+      "Integrity": "nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\MyMVCApp.styles.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "0fe0zyaxhn",
-      "Integrity": "BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=",
+      "Fingerprint": "7jv36uega7",
+      "Integrity": "nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MyMVCApp.bundle.scp.css"
@@ -21626,13 +21626,13 @@
       ]
     },
     {
-      "Route": "MyMVCApp.0fe0zyaxhn.bundle.scp.css",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-0fe0zyaxhn.gz",
+      "Route": "MyMVCApp.7jv36uega7.bundle.scp.css",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-7jv36uega7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001757469244"
+          "Quality": "0.001633986928"
         }
       ],
       "ResponseHeaders": [
@@ -21642,15 +21642,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21670,13 +21670,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "W/\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0fe0zyaxhn"
+          "Value": "7jv36uega7"
         },
         {
           "Name": "label",
@@ -21684,12 +21684,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
     {
-      "Route": "MyMVCApp.0fe0zyaxhn.bundle.scp.css",
+      "Route": "MyMVCApp.7jv36uega7.bundle.scp.css",
       "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MyMVCApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21699,7 +21699,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1295"
+          "Value": "1465"
         },
         {
           "Name": "Content-Type",
@@ -21707,11 +21707,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21721,7 +21721,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0fe0zyaxhn"
+          "Value": "7jv36uega7"
         },
         {
           "Name": "label",
@@ -21729,13 +21729,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
     {
-      "Route": "MyMVCApp.0fe0zyaxhn.bundle.scp.css.gz",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-0fe0zyaxhn.gz",
+      "Route": "MyMVCApp.7jv36uega7.bundle.scp.css.gz",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-7jv36uega7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21744,7 +21744,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "Content-Type",
@@ -21752,11 +21752,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21774,7 +21774,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0fe0zyaxhn"
+          "Value": "7jv36uega7"
         },
         {
           "Name": "label",
@@ -21782,18 +21782,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc="
+          "Value": "sha256-lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE="
         }
       ]
     },
     {
-      "Route": "MyMVCApp.0fe0zyaxhn.styles.css",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-0fe0zyaxhn.gz",
+      "Route": "MyMVCApp.7jv36uega7.styles.css",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-7jv36uega7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001757469244"
+          "Quality": "0.001633986928"
         }
       ],
       "ResponseHeaders": [
@@ -21803,15 +21803,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21831,13 +21831,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "W/\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0fe0zyaxhn"
+          "Value": "7jv36uega7"
         },
         {
           "Name": "label",
@@ -21845,12 +21845,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
     {
-      "Route": "MyMVCApp.0fe0zyaxhn.styles.css",
+      "Route": "MyMVCApp.7jv36uega7.styles.css",
       "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\MyMVCApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21860,7 +21860,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1295"
+          "Value": "1465"
         },
         {
           "Name": "Content-Type",
@@ -21868,11 +21868,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21882,7 +21882,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0fe0zyaxhn"
+          "Value": "7jv36uega7"
         },
         {
           "Name": "label",
@@ -21890,13 +21890,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
     {
-      "Route": "MyMVCApp.0fe0zyaxhn.styles.css.gz",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-0fe0zyaxhn.gz",
+      "Route": "MyMVCApp.7jv36uega7.styles.css.gz",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-7jv36uega7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21905,7 +21905,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "Content-Type",
@@ -21913,11 +21913,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21935,7 +21935,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0fe0zyaxhn"
+          "Value": "7jv36uega7"
         },
         {
           "Name": "label",
@@ -21943,18 +21943,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc="
+          "Value": "sha256-lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE="
         }
       ]
     },
     {
       "Route": "MyMVCApp.bundle.scp.css",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-0fe0zyaxhn.gz",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-7jv36uega7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001757469244"
+          "Quality": "0.001633986928"
         }
       ],
       "ResponseHeaders": [
@@ -21964,15 +21964,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21992,13 +21992,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "W/\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
@@ -22013,7 +22013,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1295"
+          "Value": "1465"
         },
         {
           "Name": "Content-Type",
@@ -22021,11 +22021,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22035,13 +22035,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
     {
       "Route": "MyMVCApp.bundle.scp.css.gz",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-0fe0zyaxhn.gz",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\e4dowgmbtv-7jv36uega7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22050,7 +22050,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "Content-Type",
@@ -22058,11 +22058,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22080,18 +22080,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc="
+          "Value": "sha256-lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE="
         }
       ]
     },
     {
       "Route": "MyMVCApp.styles.css",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-0fe0zyaxhn.gz",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-7jv36uega7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001757469244"
+          "Quality": "0.001633986928"
         }
       ],
       "ResponseHeaders": [
@@ -22101,15 +22101,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22129,13 +22129,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "W/\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
@@ -22150,7 +22150,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1295"
+          "Value": "1465"
         },
         {
           "Name": "Content-Type",
@@ -22158,11 +22158,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE=\""
+          "Value": "\"nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22172,13 +22172,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BAxbWHKFBnCq44dtiqgzENM6oeb2Z4rdGJH1seGzAyE="
+          "Value": "sha256-nV8nZcYyR+ypVsmzDc3E+YcKPd2pJOaUktNC7I2J1/w="
         }
       ]
     },
     {
       "Route": "MyMVCApp.styles.css.gz",
-      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-0fe0zyaxhn.gz",
+      "AssetFile": "E:\\ASP_NET\\MyMVCApp\\obj\\Debug\\net9.0\\compressed\\tdw6hq2dso-7jv36uega7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22187,7 +22187,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "568"
+          "Value": "611"
         },
         {
           "Name": "Content-Type",
@@ -22195,11 +22195,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc=\""
+          "Value": "\"lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:14:39 GMT"
+          "Value": "Tue, 11 Mar 2025 03:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22217,7 +22217,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Q9yH42u3d5+YXhUR5vn0ywG/yjjAbGr8i/QN15eg6Fc="
+          "Value": "sha256-lcOEm7UfvFfjYKDrBeylMcEwyTRp2mUwz+KQakkAmdE="
         }
       ]
     }

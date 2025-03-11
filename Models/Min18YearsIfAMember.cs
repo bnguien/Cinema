@@ -7,27 +7,30 @@ namespace MyMVCApp.Models
     {
         protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
         {
-            var customer = (Customer)validationContext.ObjectInstance;
+            if (validationContext.ObjectInstance is not Customer customer)
+                return new ValidationResult("Invalid object type.");
 
-            if (customer.MembershipTypeId == MembershipType.Unknown || 
-                customer.MembershipTypeId == MembershipType.PayAsYouGo)
-                return ValidationResult.Success!;
-
-            if (customer.Birthdate == null)
-                return new ValidationResult("Birthdate is required.");
-
-            if (customer.Birthdate == null)
+            if (!customer.Birthdate.HasValue)
                 return new ValidationResult("Birthdate is required.");
 
             var birthdate = customer.Birthdate.Value;
+            if (birthdate > DateTime.Today)
+                return new ValidationResult("Birthdate cannot be in the future.");
             var age = DateTime.Today.Year - birthdate.Year;
-
-            if (birthdate > DateTime.Today.AddYears(-age))
+            if (birthdate > DateTime.Today.AddYears(-age)) 
                 age--;
 
-            return (age >= 18) 
-                ? ValidationResult.Success! 
-                : new ValidationResult("Customer should be at least 18 years old to go on a membership.");
+            if (age < 16)
+                return new ValidationResult("Customer must be at least 16 years old.");
+
+            if (customer.MembershipTypeId != MembershipType.Unknown &&
+                customer.MembershipTypeId != MembershipType.PayAsYouGo &&
+                age < 18)
+            {
+                return new ValidationResult("Customer should be at least 18 years old to go on a membership.");
+            }
+
+            return ValidationResult.Success!;
         }
     }
 }

@@ -17,22 +17,22 @@
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Name)
         @Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Movie.Name)
+        @Html.ValidationMessageFor(m => m.Movie.Name,null,new{@class="text-danger"})
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Genre)
         @Html.TextBoxFor(m => m.Movie.Genre, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Movie.Genre)
+        @Html.ValidationMessageFor(m => m.Movie.Genre,null,new{@class="text-danger"})
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.ReleaseDate)
         @Html.TextBoxFor(m => m.Movie.ReleaseDate, new { @class = "form-control", type = "date" })
-        @Html.ValidationMessageFor(m => m.Movie.ReleaseDate)
+        @Html.ValidationMessageFor(m => m.Movie.ReleaseDate,null,new{@class="text-danger"})
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Price)
         @Html.TextBoxFor(m => m.Movie.Price, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Movie.Price)
+        @Html.ValidationMessageFor(m => m.Movie.Price,null,new{@class="text-danger"})
     </div>
     <button type="submit" class="btn btn-primary">Save</button>
 }

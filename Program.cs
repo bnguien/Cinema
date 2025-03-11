@@ -8,6 +8,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddControllersWithViews()
+.AddViewOptions(options => options.HtmlHelperOptions.ClientValidationEnabled = true);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,6 +30,6 @@ app.MapControllers();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Customer}/{action=Index}/{id?}"); 
+    pattern: "{controller=Customer}/{action=Index}/{id?}");
 
 app.Run();
