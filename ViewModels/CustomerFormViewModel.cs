@@ -11,5 +11,6 @@ namespace MyMVCApp.ViewModels
     {
         public IEnumerable<MembershipType>? MembershipTypes { get; set; }
         public MyMVCApp.Models.Customer Customer { get; set; } = new MyMVCApp.Models.Customer(); 
+        public string MembershipTypeName => Customer.MembershipType?.Name ?? "N/A";
     }
 }

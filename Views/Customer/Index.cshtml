@@ -1,33 +1,75 @@
 @model List<MyMVCApp.Models.Customer>
 @{
-    ViewData["Title"] = "Customer";
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@ViewData["Title"]</h2>
+<h2>Customers</h2>
+<p>
+    @Html.ActionLink("New Customer", "New", "Customer", null, new { @class = "btn btn-primary" })
+</p>
 
-@if (Model == null || !Model.Any())
-{
-    <text>No customers have been added</text>
-}
-else
-{
-    <table class="table">
-        <thead>
-           <tr>
-            <th>Name</th>
+<table id="customers" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Membership Type</th>
             <th>Action</th>
-           </tr>
-        </thead>
-        <tbody>
-            @foreach (var customer in Model)
-            {
-                <tr>
-                    <td>@customer.Name</td>
-                    <td><a asp-controller="Customer" asp-action="Details" asp-route-id="@customer.Id">View Details</a></td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    <button btn-addNewCustomer><a asp-asp-controller="Customer" asp-action="New">Add New Customer</a></button>
-}
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
 
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var table = $("#customers").DataTable({
+                ajax: {
+                    url: "/api/customer",
+                    dataSrc: ""
+                },
+                columns: [
+                    { data: "customer.name", title: "Customer" }, // Truy cập vào object Customer
+                    { data: "membershipTypeName", title: "Membership Type" }, // Sử dụng thuộc tính mới
+                    {
+                        data: "customer.id",
+                        title: "Action",
+                        render: function (data) {
+                            return "<button class='btn btn-danger js-delete' data-customer-id='" + data + "'>Delete</button> " +
+                                    "<button class='btn btn-primary js-edit' data-customer-id='" + data + "'>Edit</button> " +
+                                    "<button class='btn btn-info js-details' data-customer-id='" + data + "'>Details</button>";
+                        }
+                    }
+                ]
+            });
+
+            $("#customers").on("click", ".js-delete", function () {
+                var button = $(this);
+
+                bootbox.confirm("Are you sure you want to delete this customer?", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/customer/" + button.attr("data-customer-id"),
+                            method: "DELETE",
+                            success: function () {
+                                table.row(button.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+            // Xử lý sự kiện Edit
+            $("#customers").on("click", ".js-edit", function () {
+                var customerId = $(this).attr("data-customer-id");
+                window.location.href = "/customer/edit/" + customerId;
+            });
+
+            // Xử lý sự kiện Details
+            $("#customers").on("click", ".js-details", function () {
+                var customerId = $(this).attr("data-customer-id");
+                window.location.href = "/customer/details/" + customerId;
+            });
+        });
+    </script>
+}

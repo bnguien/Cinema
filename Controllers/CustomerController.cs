@@ -21,22 +21,20 @@ namespace MyMVCApp.Controllers
         {
             _context.Dispose();
         }
-
+       
         public IActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
             {
-                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
 
-            return View("New", viewModel);
+            return View("CustomerForm", viewModel);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Save(Customer customer)
+        public ActionResult Save(Customer customer)
         {
             if (!ModelState.IsValid)
             {
@@ -46,7 +44,7 @@ namespace MyMVCApp.Controllers
                     MembershipTypes = _context.MembershipTypes.ToList()
                 };
 
-                return View("New", viewModel);
+                return View("CustomerForm", viewModel);
             }
 
             if (customer.Id == 0)
@@ -64,35 +62,12 @@ namespace MyMVCApp.Controllers
 
             return RedirectToAction("Index", "Customer");
         }
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            var customer = _context.Customers.Find(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
-            return View(customer);
-        }
-        [HttpPost]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            var customer = _context.Customers.Find(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
-            _context.Customers.Remove(customer);
-            _context.SaveChanges();
-            return RedirectToAction("Index", "Customer");
-        }
         public IActionResult Index()
         {
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             return View(customers);
         }
-
         public IActionResult Details(int id)
         {
             var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
@@ -102,7 +77,6 @@ namespace MyMVCApp.Controllers
 
             return View(customer);
         }
-
         public IActionResult Edit(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
