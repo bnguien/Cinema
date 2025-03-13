@@ -39,7 +39,7 @@ namespace MyMVCApp.Controllers
             {
                 Movie = new Movie()
             };
-            return View(movie);
+            return View("MovieForm", movie);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 
-[Route("api/[controller]")]
+[Route("api/movies")]
 [ApiController]
 public class MoviesController : ControllerBase
 {
@@ -66,9 +66,9 @@ public class MoviesController : ControllerBase
 
     // DELETE: api/Movies/5
     [HttpDelete("{id}")]
-    public IActionResult Delete(long id)
+    public IActionResult Delete(int id)
     {
-        var movie = _context.Movies.Find(id);
+        var movie = _context.Movies.Find(Convert.ToInt32(id));
         if (movie == null)
         {
             return NotFound();

@@ -1,32 +1,73 @@
 @model List<MyMVCApp.Models.Movie>
 
 @{
-    ViewData["Title"] = "Movie";
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@ViewData["Title"]</h2>
-@if(!Model.Any() || Model == null)
+<h2>Movies</h2>
+<p>
+    @Html.ActionLink("New Movie", "New", "Movies", null, new { @class = "btn btn-primary" })
+</p>
+
+<table id="movies" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Movie</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section scripts
 {
-    <p>We don't currently have any movies</p>
-}
-else
-{
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var movie in Model)
-            {
-                <tr>
-                    <td>@movie.Name</td>
-                    <td><a asp-controller="Movies" asp-action="Details" asp-route-id="@movie.Id">View Details</a></td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    <button btn-addNewMovie><a asp-asp-controller="Movies" asp-action="New">Add New Movie</a></button>
+    <script>
+        $(document).ready(function () {
+            var table = $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+                columns: [
+                    { data: "name", title: "Movie" },
+                    {
+                        data: "id",
+                        title: "Action",
+                        render: function (data) {
+                            return "<button class='btn btn-danger js-delete' data-movie-id='" + data + "'>Delete</button> " +
+                                "<button class='btn btn-primary js-edit' data-movie-id='" + data + "'>Edit</button> " +
+                                "<button class='btn btn-info js-details' data-movie-id='" + data + "'>Details</button>";
+                        }
+                    }
+                ]
+            });
+
+            $("#movies").on("click", ".js-delete", function () {
+                var button = $(this);
+
+                bootbox.confirm("Are you sure you want to delete this movie?", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/movies/" + button.attr("data-movie-id"),
+                            method: "DELETE",
+                            success: function () {
+                                table.row(button.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+
+            $("#movies").on("click", ".js-edit", function () {
+                var button = $(this);
+                window.location.href = "/movies/edit/" + button.attr("data-movie-id");
+            });
+
+            $("#movies").on("click", ".js-details", function () {
+                var button = $(this);
+                window.location.href = "/movies/details/" + button.attr("data-movie-id");
+            });
+        });
+    </script>
 }
